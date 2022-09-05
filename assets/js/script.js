@@ -15,16 +15,16 @@ for (let button of buttons) {
 
 function playGame(playersChoice) {
 
-playerImage.src = `assets/images/${choices[playerChoice]}.png`;
+playerImage.src = `assets/images/${choices[playerChoice]}.jpg`;
 playerImage.alt = choices[playerChoice];
 
 let computerChoice = Math.floor(Math.random() *5);
 
-computerImage.src = `assets/images/${choices[computerChoice]}.png`;
+computerImage.src = `assets/images/${choices[computerChoice]}.jpg`;
 computerImage.alt = choices[computerImage];
 
 let result = checkWinner(choices[computerChoice], choices[playerChoice]);
-
-updateScores(result);
-
 }
+
+function checkWinner() {}
+    
